@@ -25,8 +25,8 @@ async fn main() {
         ship_to_city: "Amsterdam".to_string(), // Ship To City supplied by other party (Amersfoort for testing)
         ship_to_postal_code: "1111AA".to_string(), // Ship To Postal Code supplied by other party (3825HA for testing)
         ship_to_country: "NL".to_string(), // Ship To Country supplied by other party (NL for testing)
-        ship_to_phone: "0612345678".to_string(), // Ship To Phone supplied by other party (0657844447 for testing)
-        ship_to_email: "johndoe@gmail.com".to_string(), // Ship To Email supplied by other party (lodewijkboon@icloud.com for testing)
+        ship_to_phone: "0612345678".to_string(), // Ship To Phone supplied by other party (0612345678 for testing)
+        ship_to_email: "johndoe@gmail.com".to_string(), // Ship To Email supplied by other party (johndoe@gmail.com for testing)
     };
 
     // Post the order
