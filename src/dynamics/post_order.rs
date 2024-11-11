@@ -10,7 +10,7 @@ use super::structs::Order;
 pub async fn post_order(token: String, order: Order) -> Result<Value, Error> {
     // API endpoint data 
     let tenant_id = ""; // Tenant ID > Obtained from Entra ID
-    let company_id = ""; // Company ID from Onera > Obtained from Microsoft Dynamics (for testing purposes, Cellcare BV.)
+    let company_id = ""; // Company ID from Onera > Obtained from Microsoft Dynamics 
     let environment = ""; // Environment (AcceptanceV25 or Production)
 
     // API endpoint for creating a sales order
