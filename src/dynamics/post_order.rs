@@ -11,11 +11,11 @@ pub async fn post_order(token: String, order: Order) -> Result<Value, Error> {
     // API endpoint data 
     let tenant_id = ""; // Tenant ID > Obtained from Entra ID
     let company_id = ""; // Company ID from third party > Obtained from Microsoft Dynamics 
-    let environment = ""; // Environment (AcceptanceV25 or Production)
+    let environment = ""; // Environment (Acceptance_V25 or Production)
 
     // API endpoint for creating a sales order
     let api_endpoint = format!(
-        "https://api.businesscentral.dynamics.com/v2.0/{}/{}/api/v2.0/companies({})/salesOrders",
+        "https://api.businesscentral.dynamics.com/v2.0/{}/{}/api/MSA/API/v2.0/companies({})/salesOrders",
         tenant_id, environment, company_id
     );
 
