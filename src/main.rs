@@ -17,7 +17,7 @@ async fn main() {
     // Create an order
     let order = Order {
         subject: "12345".to_string(), // External document number supplied by other party (12345 for testing)
-        _study_id: "XXXXXX".to_string(), // TODO: Supply  reference. Actual study ID supplied by other party (9x9 for testing) 
+        study_id: "123456789".to_string(), // Actual study ID supplied by other party (9x9 for testing) 
         due: "2025-01-01".to_string(), // Due date supplied by other party, format "YYYY-MM-DD" (2025-01-01 for testing) 
         head_path_size: "00000".to_string(), // Head Path Size supplied by other party (51491 for testing)
         ship_to_name: "John Doe".to_string(), // Ship To Name supplied by other party (Lodewijk Boon for testing)

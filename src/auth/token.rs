@@ -10,10 +10,10 @@ struct TokenResponse {
 }
 
 pub async fn request_token() -> Result<String, Error> {
-    // Dynamics API data, retreived from Entra > App Registrations > Onera API
-    let tenant_id = ""; // Tenant ID > Obtained from Entra > App Registrations > Onera API access
-    let service_principal_id = ""; // Service Principal // Obtained from Entra > App Registrations > Onera API access
-    let client_secret = ""; // Onera API secret
+    // Dynamics API data, retreived from Entra > App Registrations > API
+    let tenant_id = ""; // Tenant ID > Obtained from Entra > App Registrations > API
+    let service_principal_id = ""; // Service Principal // Obtained from Entra > App Registrations > API API access
+    let client_secret = ""; // API API secret
     
     // Token endpoint & scope
     let token_endpoint = format!("https://login.microsoftonline.com/{}/oauth2/v2.0/token", tenant_id);

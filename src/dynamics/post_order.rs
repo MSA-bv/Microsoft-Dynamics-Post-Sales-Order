@@ -22,7 +22,8 @@ pub async fn post_order(token: String, order: Order) -> Result<Value, Error> {
     // Create JSON object for sales order
     // TODO: Add reference number to sales order
     let sales_order = json!({
-        "customerNumber": "0000", // Customer ID 
+        "customerNumber": "0007", // Customer ID (default value, same for every order) 
+        "suitYourReference": order.study_id, // Study ID (Your reference inside Dynamics)
         "externalDocumentNumber": order.subject, // External document number
         "postingDate": order.due, // Due date (YYYY-MM-DD)
         "salesOrderLines": [ // Products/items in order
